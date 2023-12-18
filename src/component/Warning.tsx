@@ -1,4 +1,4 @@
-import FeedbackMessage from "./feedbackmessage";
+import FeedbackMessage from "./FeedbackMessage";
 import React from "react";
 
 export default function Warning() {
