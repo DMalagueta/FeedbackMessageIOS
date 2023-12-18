@@ -1,0 +1,131 @@
+.feedback-message {
+  position: fixed;
+  top: 0;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 50%;
+  margin: 10px 0;
+  display: none;
+  animation: slideDown 0.5s ease-in-out forwards,
+    expandMessage 0.5s 1s ease-in-out forwards,
+    fadeOut 7s 8s ease-in-out forwards;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: content-box;
+  --bg-success: #d4edda;
+  --bg-error: #f8d7da;
+  --bg-warning: #fff3cd;
+  --bg-info: #d1ecf1;
+  --color-success: #155724;
+  --color-error: #721c24;
+  --color-warning: #856404;
+  --color-info: #0c5460;
+}
+
+.feedback-message.visible {
+  display: flex;
+}
+
+.feedback-message.visible .feedback-message__text {
+  margin-left: 8px;
+}
+
+.feedback-message__icon img {
+  width: 20px;
+}
+
+.feedback-message__text {
+  opacity: 0;
+  margin-left: 8px;
+  animation: fadeIn 0.5s 1s ease-in-out forwards;
+}
+
+.feedback-message__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 5px;
+  transition: width 0.1s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 0.5s 1s ease-in-out forwards;
+}
+
+.feedback-message.success {
+  background-color: var(--bg-success);
+  color: var(--color-success);
+}
+
+.feedback-message.error {
+  background-color: var(--bg-error);
+  color: var(--color-error);
+}
+
+.feedback-message.warning {
+  background-color: var(--bg-warning);
+  color: var(--color-warning);
+}
+
+.feedback-message.info {
+  background-color: var(--bg-info);
+  color: var(--color-info);
+}
+
+.feedback-message.success .feedback-message__progress {
+  background-color: var(--color-success);
+}
+
+.feedback-message.error .feedback-message__progress {
+  background-color: var(--color-error);
+}
+
+.feedback-message.warning .feedback-message__progress {
+  background-color: var(--color-warning);
+}
+
+.feedback-message.info .feedback-message__progress {
+  background-color: var(--color-info);
+}
+
+/*Animations*/
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandMessage {
+  from {
+    border-radius: 50%;
+    width: 50px;
+  }
+  to {
+    border-radius: 5px;
+    left: 10%;
+    width: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
