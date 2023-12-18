@@ -1,7 +1,6 @@
 .feedback-message {
   position: fixed;
   top: 0;
-  left: 10%;
   width: 20px;
   height: 20px;
   transform: translate(-50%, -50%);
@@ -106,7 +105,6 @@
   }
   to {
     border-radius: 5px;
-    left: 10%;
     width: 300px;
     opacity: 1;
   }
