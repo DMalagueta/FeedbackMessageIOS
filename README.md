@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Feedback Message
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/DMalagueta/FeedbackMessageIOS/assets/84686081/a6541c07-d91c-4ee0-a58a-c98c184cae35)
 
-Currently, two official plugins are available:
+The FeedbackMessage component is a versatile React component designed to display feedback messages with an IOS animation. It provides a user-friendly way to convey success, error, warning, or information messages to the user, along with an optional progress bar to indicate the remaining time for the message to disappear. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+You can install the `CodePreview` component via npm or yarn:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Usage
+To use the FeedbackMessage component in your React application, import it and include it in your code. You can provide the following props:
+
+- message (string): The content of the feedback message.
+- type ('success' | 'error' | 'warning' | 'info'): The type of feedback message, influencing its appearance and icon.
+- duration (number, optional): The duration (in milliseconds) the message stays visible before automatically dismissing. Defaults to 3000 milliseconds (3 seconds).
+- isOpen (boolean): the state of the feedback message.
+
+Here's an example of how to use the FeedbackMessage:
+
+```js
+ <FeedbackMessage
+    message="This is a success message"
+    type="success"
+    duration={5000}
+    isOpen={showFeedback}
+/>
+```
+
+# Running the Project
+To run the project using Vite, use the following command:
+```
+npm run dev
+# or
+yarn dev
+```
