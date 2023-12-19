@@ -1,5 +1,7 @@
 # Feedback Message
 
+URL: https://github.com/DMalagueta/FeedbackMessageIOS
+
 ![image](https://github.com/DMalagueta/FeedbackMessageIOS/assets/84686081/a6541c07-d91c-4ee0-a58a-c98c184cae35)
 
 The FeedbackMessage component is a versatile React component designed to display feedback messages with an IOS animation. It provides a user-friendly way to convey success, error, warning, or information messages to the user, along with an optional progress bar to indicate the remaining time for the message to disappear. 
