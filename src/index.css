@@ -31,6 +31,10 @@
     margin-bottom: 20px;
 }
 
+.btn-container{
+    text-align: center;
+}
+
 .btn-success, .btn-info, .btn-warning, .btn-error {
     background-color: #fff;
     border: 1px solid #ccc;
