@@ -8,7 +8,7 @@ interface FeedbackType {
 
 function App() {
   const [showFeedback, setShowFeedback] = React.useState(false);
-  const [feedbackType, setFeedbackType] = React.useState<FeedbackType | null>({
+  const [feedbackType, setFeedbackType] = React.useState<FeedbackType>({
     type: "info",
     message: "This is a info message",
   });
