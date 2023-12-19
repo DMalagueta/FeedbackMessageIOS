@@ -17,7 +17,6 @@ function App() {
     type: "info" | "success" | "error" | "warning",
     message: string
   ) => {
-    setFeedbackType(null);
     setFeedbackType({
       type,
       message,
