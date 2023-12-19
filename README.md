@@ -1,6 +1,6 @@
 # Feedback Message
 
-URL: https://github.com/DMalagueta/FeedbackMessageIOS
+URL: https://dmalagueta.github.io/feedbackmessageios/
 
 ![image](https://github.com/DMalagueta/FeedbackMessageIOS/assets/84686081/a6541c07-d91c-4ee0-a58a-c98c184cae35)
 
