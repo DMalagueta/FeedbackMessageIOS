@@ -8,7 +8,7 @@ The FeedbackMessage component is a React component designed to display feedback 
 
 ## Installation
 
-You can install the `CodePreview` component via npm or yarn:
+You can install the `FeedbackMesssage` component via npm or yarn:
 
 ```bash
 npm install
